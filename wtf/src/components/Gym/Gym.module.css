@@ -1,0 +1,55 @@
+.inputbox{
+    margin: 50px auto;
+    width: 85%;
+    padding: 8px 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap:10px; */
+}
+.inputbox>input{
+    width: 930px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: white;
+}
+
+
+.searchbtn1{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px;
+    background: #920909;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-weight: 400;
+    border: none;
+}
+.searchbtn2{
+    height: 40px;
+    padding: 7px 20px;
+    background: #920909;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-weight: 400;
+    border: none;
+}
+#price{
+    display: flex;
+    gap: 10px;
+}
+#price input{
+    width: 50px;
+}

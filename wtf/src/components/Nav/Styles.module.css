@@ -1,16 +1,22 @@
+.Nav {
+  position: fixed;
+  width: 100%;
+}
+
 .navContainer {
-  
   color: rgb(206, 206, 206);
+  max-width: 100%;
+  max-height: 50px;
   display: flex;
   justify-content: space-between;
   padding: 0px 50px;
   align-items: center;
-  position: sticky;
+
   font-size: large;
 }
-.navContainer p:hover{
-color: white;
-cursor: pointer;
+.navContainer p:hover {
+  color: white;
+  cursor: pointer;
 }
 .navContainer div {
   display: flex;
