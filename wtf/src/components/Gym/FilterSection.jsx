@@ -1,7 +1,7 @@
 import axios from "axios";
 import React from "react";
 import styles from './Gym.module.css'
-function Filter({ setData, data }) {
+function Filter() {
   
 
   return (

@@ -1,55 +1,102 @@
-.inputbox{
-    margin: 50px auto;
-    width: 85%;
-    padding: 8px 15px;
-    border: 2px solid white;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* gap:10px; */
+.inputbox {
+  margin: 50px auto;
+  width: 85%;
+  padding: 8px 15px;
+  border: 2px solid white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap:10px; */
 }
-.inputbox>input{
-    width: 930px;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    font-size: 18px;
-    color: white;
+.inputbox > input {
+  width: 950px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: white;
 }
 
-
-.searchbtn1{
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 6px 12px;
-    background: #920909;
+.searchbtn1 {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  background: #920909;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 19px;
+  font-weight: 400;
+  border: none;
+}
+.searchbtn2 {
+  height: 40px;
+  padding: 7px 20px;
+  background: #920909;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 19px;
+  font-weight: 400;
+  border: none;
+}
+#price {
+  display: flex;
+  gap: 10px;
+}
+#price input {
+  width: 50px;
+}
+.gymDetails {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.imgDiv {
+  width: 40%;
+  background-color: black;
+}
+.imgDiv img {
+  height: 100%;
+  width: 100% !important;
+  object-fit: cover;
+  -webkit-mask-image: linear-gradient(
+    to left,
+    transparent 3%,
+    rgb(114, 86, 86) 40%
+  );
+  mask-image: linear-gradient(to, transparent 5%, 40%);
+}
+.gymDetails1 {
+  
+  width: 60%;
+  height: 100%;
+}
+.gymName {
+  width: 100%;
+  height: 100px;
+}
+.buttonDiv {
+  margin-top: 50px;
+  display: flex;
+  /* align-items: center; */
+  /* margin: auto; */
+  justify-content: flex-end;
+  padding: 20px;
+}
+.buttonDiv button{
+    background-color: rgb(146,9,9);
+    padding: 10px 20px 10px 20px;
+    color: white;
+    font-size: large;
     border-radius: 5px;
     cursor: pointer;
-    text-decoration: none;
-    color: white;
-    font-size: 19px;
-    font-weight: 400;
-    border: none;
-}
-.searchbtn2{
-    height: 40px;
-    padding: 7px 20px;
-    background: #920909;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    color: white;
-    font-size: 19px;
-    font-weight: 400;
-    border: none;
-}
-#price{
-    display: flex;
-    gap: 10px;
-}
-#price input{
-    width: 50px;
 }
