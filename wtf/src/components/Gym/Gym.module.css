@@ -76,7 +76,6 @@
   mask-image: linear-gradient(to, transparent 5%, 40%);
 }
 .gymDetails1 {
-  
   width: 60%;
   height: 100%;
 }
@@ -92,80 +91,118 @@
   justify-content: flex-end;
   padding: 20px;
 }
-.buttonDiv button{
-    background-color: rgb(146,9,9);
-    padding: 10px 20px 10px 20px;
-    color: white;
-    font-size: large;
-    border-radius: 5px;
-    cursor: pointer;
+.buttonDiv button {
+  background-color: rgb(146, 9, 9);
+  padding: 10px 20px 10px 20px;
+  color: white;
+  font-size: large;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.reset{
+.reset {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
-.resetbtn{
+.resetbtn {
   visibility: hidden;
   width: 100px;
   height: 30px;
-  background-color: rgb(146,9,9);
+  background-color: rgb(146, 9, 9);
   color: white;
   border-radius: 5px;
   cursor: pointer;
 }
-.resetbutton{
+.resetbutton {
   display: block;
   width: 100px;
   height: 30px;
-  background-color: rgb(146,9,9);
+  background-color: rgb(146, 9, 9);
   color: white;
   border-radius: 5px;
   cursor: pointer;
 }
-.gymBanner{
- 
+.gymBanner {
   width: 90%;
-  height: 600px;
+  height: auto;
   margin: auto;
 }
-.gymRating{
+.gymRating {
   margin-top: 50px;
   width: 100%;
   padding: 20px;
   display: flex;
   justify-content: space-between;
 }
-.ratingDiv{
+.ratingDiv {
   text-align: center;
   width: 200px;
   height: 100px;
-  background-color: rgb(146,9,9);
+  background-color: rgb(146, 9, 9);
   font-size: larger;
-  
 }
-.gymRating svg{
+.gymRating svg {
   color: white;
 }
-.membership{
+.membership {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
-.membershipChil1{
+.membershipChil1 {
   width: 40%;
 }
-.gymTerm{
+.gymTerm {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 150px;
- 
+
   gap: 10px;
 }
-.gymTerm div{
+.gymTerm div {
   text-align: center;
- 
+
   background-color: #920909;
   border-radius: 5px;
+}
+.planDiv {
+  width: 50%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  align-items: center;
+  padding: 1%;
+}
+
+.plan {
+  width: 90%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 150px;
+  margin: 20px 0;
+  border: 3px solid white;
+  border-radius: 10px;
+  background: #4568dc;
+  background: -webkit-linear-gradient(to right, #b06ab3, #4568dc);
+  background: linear-gradient(to right, #b06ab3, #4568dc);
+}
+.planhead {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  text-transform: uppercase;
+}
+.planDiv button {
+  width: 50px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: white;
+  font-weight: bold;
+}
+.locon {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
 }
