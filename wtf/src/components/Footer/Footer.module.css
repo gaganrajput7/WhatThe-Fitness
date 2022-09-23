@@ -1,0 +1,78 @@
+.footer {
+  width: 100%;
+  height: 400px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: rgb(202, 198, 198);
+}
+.footer p {
+  cursor: pointer;
+}
+.social {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+.instagram {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+
+  background-color: white;
+  color: red;
+  cursor: pointer;
+}
+.instagram svg {
+  margin-top: 25%;
+}
+.instagram:hover {
+  background-color: red;
+  color: white;
+}
+.facebook {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: white;
+  color: blue;
+  cursor: pointer;
+}
+.facebook svg {
+  margin-top: 25%;
+}
+.facebook:hover {
+  background-color: blue;
+  color: white;
+}
+.linkdin {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: white;
+  color: rgb(44, 154, 228);
+  cursor: pointer;
+}
+.linkdin svg {
+  margin-top: 25%;
+}
+.linkdin:hover {
+  color: white;
+  background-color: rgb(44, 154, 228);
+}
+.Contact {
+  display: flex;
+  align-items: baseline;
+
+  gap: 10px;
+}
+.Contact p {
+  width: 200px;
+  cursor: pointer;
+}

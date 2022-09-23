@@ -100,3 +100,72 @@
     border-radius: 5px;
     cursor: pointer;
 }
+.reset{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.resetbtn{
+  visibility: hidden;
+  width: 100px;
+  height: 30px;
+  background-color: rgb(146,9,9);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.resetbutton{
+  display: block;
+  width: 100px;
+  height: 30px;
+  background-color: rgb(146,9,9);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.gymBanner{
+ 
+  width: 90%;
+  height: 600px;
+  margin: auto;
+}
+.gymRating{
+  margin-top: 50px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.ratingDiv{
+  text-align: center;
+  width: 200px;
+  height: 100px;
+  background-color: rgb(146,9,9);
+  font-size: larger;
+  
+}
+.gymRating svg{
+  color: white;
+}
+.membership{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.membershipChil1{
+  width: 40%;
+}
+.gymTerm{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 150px;
+ 
+  gap: 10px;
+}
+.gymTerm div{
+  text-align: center;
+ 
+  background-color: #920909;
+  border-radius: 5px;
+}

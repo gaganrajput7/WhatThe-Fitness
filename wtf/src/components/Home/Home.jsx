@@ -4,9 +4,8 @@ import Gym from "../Gym/Gym";
 import Search from "../Gym/Search";
 import Nav from "../Nav/Nav";
 import styles from "./Home.module.css";
-import banner2 from '../../images/banner2.PNG'
-function Home() {
- 
+import banner2 from "../../images/banner2.PNG";
+function Home({ data, setData ,show}) {
   return (
     <div className={styles.homeContainer}>
       <div className={styles.banner}>
@@ -18,14 +17,16 @@ function Home() {
         </div>
         <div className={styles.filterContainer}>
           <div className={styles.FilterSection}>
-            <Filter />
+            <Filter setData={setData} show={show} data={data}/>
           </div>
           <div className={styles.gymCard}>
-            <Gym/>
+            <Gym data={data} />
           </div>
         </div>
       </div>
-      <div className={styles.banner2}><img src={banner2} alt="" /></div>
+      <div className={styles.banner2}>
+        <img src={banner2} alt="" />
+      </div>
     </div>
   );
 }
