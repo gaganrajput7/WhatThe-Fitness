@@ -3,7 +3,8 @@ import styles from "./Gym.module.css";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { FiNavigation } from "react-icons/fi";
 import { json, useNavigate } from "react-router-dom";
-function Gym({ data }) {
+import CircularProgress from '@mui/material/CircularProgress';
+function Gym({ data ,isLoading,setIsLoading}) {
   const navigate = useNavigate();
 
   const navigator = (elem) => {
@@ -12,7 +13,10 @@ function Gym({ data }) {
   };
   return (
     <>
-      {data &&
+    {isLoading ? <div className={styles.loaderDiv}><CircularProgress/></div>:
+    <>
+      {data.length > 0 ? (
+        
         data.map((elem) => {
           return (
             <div
@@ -64,8 +68,14 @@ function Gym({ data }) {
               </div>
             </div>
           );
-        })}
-    </>
+        }) 
+      ) : (
+        <>
+          <div>No Data</div>
+        </>
+      )}
+      </>
+      }</>
   );
 }
 

@@ -1,27 +1,31 @@
 import axios from "axios";
 import React, { useState } from "react";
 import styles from "./Gym.module.css";
-function Filter({ data, setData, show }) {
+function Filter({ data, setData, show, isloading, setIsLoading }) {
   const [flag, setFlag] = useState(true);
   const handleChange = (e) => {
+    setIsLoading(true);
     const { value } = e.target;
     axios
       .get(
         `https://devapi.wtfup.me/gym/nearestgym?lat=30.325488815850512&long=78.0042384802231&city=${value}`
       )
-      .then(({ data }) => (data ? setData(data.data) : "No Data"))
+      .then(({ data }) => {
+        data.status ? setData(data.data) : setData([]);
+        setIsLoading(false);
+      })
       .catch((err) => console.log(err));
     setFlag(false);
   };
 
   const searchByPlace = (e) => {
+    setIsLoading(true);
     const { value } = e.target;
-
     data = data.filter((ele) =>
       ele.address1.toUpperCase().includes(value.toUpperCase())
     );
-
     setData(data);
+    setIsLoading(false)
   };
   const handleReset = () => {
     setFlag(true);

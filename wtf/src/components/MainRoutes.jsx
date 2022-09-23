@@ -9,6 +9,7 @@ import SingleGym from "./Gym/SingleGym";
 function MainRoutes() {
   const [data, setData] = useState();
   const [loading, setLoading] = useState(true);
+  const [isloading,setIsLoading] = useState(false)
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(show);
   }, []);
@@ -33,18 +34,18 @@ function MainRoutes() {
         </>
       ) : (
         <>
-          {data && (
-            <>
-              <Routes>
-                <Route
-                  path="/"
-                  element={<Home data={data} setData={setData} show={show}/>}
-                />
-                <Route path='/:id' element={<SingleGym/>}/>
-              </Routes>
-              <Footer />
-            </>
-          )}
+          
+          <>
+            <Routes>
+              <Route
+                path="/"
+                element={<Home data={data} setData={setData} show={show} isloading={isloading} setIsLoading={setIsLoading}/>}
+              />
+              <Route path="/:id" element={<SingleGym />} />
+            </Routes>
+            <Footer />
+          </>
+          )
         </>
       )}
     </>
